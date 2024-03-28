@@ -1,0 +1,2 @@
+This is the content we are writing to this file.
+This is the string appended to the file.
