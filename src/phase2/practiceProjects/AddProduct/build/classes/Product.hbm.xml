@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.ecommerce">
+    <class name="Product" table="eproduct">
+        <id name="id" type="java.lang.Long">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="name" type="string">
+            <column name="name"/>
+        </property>
+        <property name="price" type="big_decimal">
+            <column name="price"/>
+        </property>
+        <property name="dateAdded" type="timestamp">
+            <column name="date_added"/>
+        </property>
+        <property name="partsHdd" type="string">
+            <column name="parts_hdd"/>
+        </property>
+        <property name="partsCpu" type="string">
+            <column name="parts_cpu"/>
+        </property>
+        <property name="partsRam" type="string">
+            <column name="parts_ram"/>
+        </property>
+    </class>
+</hibernate-mapping>
